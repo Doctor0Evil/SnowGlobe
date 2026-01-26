@@ -1,0 +1,10 @@
+[package]
+name = "rust-ant-cybo-sim"
+version = "0.1.0"
+edition = "2021"
+description = "Eco-simulation for ant-safe trays in cyboquatic nodes, projecting gains for Phoenix segments."
+authors = ["SnowGlobe EcoNet <did:bostrom:eco-anchor-0x30cc44dd55ee66ff77889900aa11bb22>"]
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+csv = "1.3"
