@@ -40,9 +40,9 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let projection = project_eco_gains(&blend, &node, biodeg_res, power_kw);
 
     // Output shard with hex-stamp
-    let shard_path = Path::new("qpudatashards/particles/AntCyboSimPhoenix2026v1.csv");
-    std::fs::create_dir_all(shard_path.parent().unwrap())?;
-    write_shard_csv(shard_path, &projection, "0x30cc44dd55ee66ff77889900aa11bb22")?;  // Bostrom DID hex-stamp
+let mut projection = project_eco_gains(&blend, &node, biodeg_res, power_kw);
+write_shard_csv(shard_path, &mut projection, "0x30cc44dd55ee66ff77889900aa11bb22")?;
+// Bostrom DID hex-stamp
 
     Ok(())
 }
