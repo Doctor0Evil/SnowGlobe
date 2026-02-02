@@ -1,0 +1,6 @@
+ALN syntax: Comma-separated, with headers for corridor_id, vt_residual, exergy_mjm3, pfbs_ngl, ecoli_absent, hex_stamp (parsable for ML ingestion).
+Content (valid, functional for knowledge ingestion):
+corridor_id,vt_residual,exergy_mjm3,pfbs_ngl,ecoli_absent,hex_stamp
+PHX-SALT-RIVER,0.000001,0.82,3.0,1,abc123def4567890hexstamp
+PHX-CAVE-CREEK,0.000002,0.94,2.5,1,def456abc1237890hexstamp
+PHX-NEW-RIVER,0.0000015,0.88,3.5,1,7890abc123def456hexstamp
